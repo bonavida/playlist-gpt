@@ -1,5 +1,38 @@
 {
   "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@pages/*": [
+        "pages/*"
+      ],
+      "@services/*": [
+        "services/*"
+      ],
+      "@components/*": [
+        "components/*"
+      ],
+      "@customTypes/*": [
+        "types/*"
+      ],
+      "@constants/*": [
+        "constants/*"
+      ],
+      "@utils/*": [
+        "utils/*"
+      ],
+      "@styles/*": [
+        "styles/*"
+      ],
+      "@hooks/*": [
+        "hooks/*"
+      ],
+      "@config/*": [
+        "config/*"
+      ],
+      "@public/*": [
+        "../public/*"
+      ],
+    },
     "target": "es5",
     "lib": [
       "dom",
@@ -17,12 +50,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true,
-    "paths": {
-      "@/*": [
-        "./src/*"
-      ]
-    }
+    "incremental": true
   },
   "include": [
     "next-env.d.ts",
