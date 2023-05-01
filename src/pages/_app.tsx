@@ -1,4 +1,5 @@
 import type { AppProps } from 'next/app';
+import { SessionProvider } from 'next-auth/react';
 import { Inter } from 'next/font/google';
 /** Components */
 import Layout from '@components/Layout';
@@ -10,10 +11,15 @@ const inter = Inter({
   variable: '--font-inter',
 });
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({
+  Component,
+  pageProps: { session, ...pageProps },
+}: AppProps) {
   return (
-    <Layout className={inter.variable}>
-      <Component {...pageProps} />
-    </Layout>
+    <SessionProvider session={session}>
+      <Layout className={inter.variable}>
+        <Component {...pageProps} />
+      </Layout>
+    </SessionProvider>
   );
 }
