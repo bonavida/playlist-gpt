@@ -8,7 +8,7 @@ const Header = () => {
   const { data: session } = useSession();
 
   return (
-    <header className="flex flex-row items-center justify-between sticky top-0 z-50 px-4 py-4 w-full mx-auto max-w-6xl">
+    <header className="flex flex-row items-center justify-between bg-[#101827] sticky top-0 z-50 px-4 py-4 w-full mx-auto max-w-6xl">
       <Link href="/" className="flex flex-row items-center gap-x-3">
         <Image
           src="/chatgpt_logo.svg"

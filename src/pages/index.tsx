@@ -6,7 +6,7 @@ import Button from 'Button';
 export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center gap-6 p-10 mt-12">
-      <h1 className="text-white font-bold text-3xl mb-8">
+      <h1 className="text-white font-bold text-3xl mb-8 text-center">
         Welcome to Playlist-GPT
       </h1>
       <p className="text-lg font-normal">
